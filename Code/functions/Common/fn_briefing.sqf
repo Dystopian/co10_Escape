@@ -35,10 +35,10 @@ A3E_Task_Prison setTaskState "CREATED";
 
 
 if(isNil("A3E_Task_Prison_Complete")) then {
-	A3E_Task_Prison_Complete = false;
+	missionnamespace setvariable ["A3E_Task_Prison_Complete",false, true];
 };
 if(isNil("A3E_Task_Prison_Failed")) then {
-	A3E_Task_Prison_Failed = false;
+	missionnamespace setvariable ["A3E_Task_Prison_Failed",false, true];
 };
 
 _trigger = createTrigger["EmptyDetector", [0,0,0]];
@@ -67,10 +67,10 @@ A3E_Task_Map setTaskState "CREATED";
 
 
 if(isNil("A3E_Task_Map_Complete")) then {
-	A3E_Task_Map_Complete = false;
+	missionnamespace setvariable ["A3E_Task_Map_Complete",false, true];
 };
 if(isNil("A3E_Task_Map_Failed")) then {
-	A3E_Task_Map_Failed = false;
+	missionnamespace setvariable ["A3E_Task_Map_Failed",false, true];
 };
 
 _trigger = createTrigger["EmptyDetector", [0,0,0], false];
@@ -88,6 +88,39 @@ _trigger setTriggerTimeout [1, 1, 1, false];
 _trigger setTriggerStatements["A3E_Task_Map_Failed", "A3E_Task_Map setTaskState ""Failed"";", ""];
 
 
+// Locate  comcenter
+private _text =  "Locate an enemy communication center. You may need to gather information from enemy patrols or check points of interest on the map to reveal the location of a comcenter.";
+
+A3E_Task_LocateComcenter= player createSimpleTask ["Locate enemy communication center"];
+A3E_Task_LocateComcenter setSimpleTaskDescription [
+   _text,
+   "Locate enemy communication center",
+   "Locate enemy communication center"
+];
+A3E_Task_LocateComcenter setTaskState "CREATED";
+
+
+if(isNil("A3E_Task_LocateComcenter_Complete")) then {
+	missionnamespace setvariable ["A3E_Task_LocateComcenter_Complete",false, true];
+};
+if(isNil("A3E_Task_LocateComcenter_Failed")) then {
+
+	missionnamespace setvariable ["A3E_Task_LocateComcenter_Failed",false, true];
+};
+
+_trigger = createTrigger["EmptyDetector", [0,0,0], false];
+_trigger setTriggerInterval 2;
+_trigger setTriggerArea[0, 0, 0, false];
+_trigger setTriggerActivation["NONE", "PRESENT", false];
+_trigger setTriggerTimeout [1, 1, 1, false];
+_trigger setTriggerStatements["A3E_Task_LocateComcenter_Complete", "A3E_Task_LocateComcenter setTaskState ""Succeeded"";", ""];
+	
+_trigger = createTrigger["EmptyDetector", [0,0,0], false];
+_trigger setTriggerInterval 2;
+_trigger setTriggerArea[0, 0, 0, false];
+_trigger setTriggerActivation["NONE", "PRESENT", false];
+_trigger setTriggerTimeout [1, 1, 1, false];
+_trigger setTriggerStatements["A3E_Task_LocateComcenter_Failed", "A3E_Task_LocateComcenter setTaskState ""Failed"";", ""];
 
 // Task Hack Commcenter
 A3E_Task_ComCenter = player createSimpleTask ["Hack Communication Center"];
@@ -100,10 +133,10 @@ A3E_Task_ComCenter setTaskState "CREATED";
 
 
 if(isNil("A3E_Task_ComCenter_Complete")) then {
-	A3E_Task_ComCenter_Complete = false;
+	missionnamespace setvariable ["A3E_Task_ComCenter_Complete",false, true];
 };
 if(isNil("A3E_Task_ComCenter_Failed")) then {
-	A3E_Task_ComCenter_Failed = false;
+	missionnamespace setvariable ["A3E_Task_ComCenter_Failed",false, true];
 };
 
 _trigger = createTrigger["EmptyDetector", [0,0,0], false];
@@ -132,10 +165,10 @@ A3E_Task_Exfil setSimpleTaskDescription [
 A3E_Task_Exfil setTaskState "CREATED";
 
 if(isNil("A3E_Task_Exfil_Complete")) then {
-	A3E_Task_Exfil_Complete = false;
+	missionnamespace setvariable ["A3E_Task_Exfil_Complete",false, true];
 };
 if(isNil("A3E_Task_Exfil_Failed")) then {
-	A3E_Task_Exfil_Failed = false;
+	missionnamespace setvariable ["A3E_Task_Exfil_Failed",false, true];
 };
 
 _trigger = createTrigger["EmptyDetector", [0,0,0], false];
@@ -173,8 +206,8 @@ if(isNil("A3E_WorldName")) then {
 	A3E_WorldName = worldName;
 };
 
-player createDiaryRecord ["Diary", ["Help and Feedback", "Help us improve this mission by reporting bugs. Visit our GitLab bugtracker at https://gitlab.anzp.de. There you can also dowload the latest, unreleased development versions of co10 Escape.<br /><br /> For discussion, direct feedback, sharing of your favorite Escape moments or just for looking for players you can join our Discord Server at https://discord.gg/0kV3JvVEhmnMfmq1"]]; 
-player createDiaryRecord ["Diary", ["Credits", "Original Mission (Arma2) by Engima.<br />Mission ported to Arma3 by Vormulac and HyperZ.<br />Continue devlopment by NeoArmageddon.<br />Island ports and unit configs by Scruffy.<br />Additional coding and bugfixing by abelian, FrozenLiquidity, Dystopian, Phantom and DPM.<br />Testing and support by Cyprus.<br />Mag repack script by outlawed.<br /><br />The official co10 Escape mission for Arma3 is developed and maintained by NeoArmageddon and Scruffy."]]; 
+player createDiaryRecord ["Diary", ["Help and Feedback", "Help us improve this mission by reporting bugs. Visit our Github bugtracker at https://github.com/NeoArmageddon/co10_Escape. There you can also download the latest, unreleased development versions of co10 Escape.<br /><br /> For discussion, direct feedback, sharing of your favorite Escape moments or just for looking for players you can join our Discord Server at https://discord.gg/0kV3JvVEhmnMfmq1"]]; 
+player createDiaryRecord ["Diary", ["Credits", "Original Mission (Arma2) by Engima.<br />Mission ported to Arma3 by Vormulac and HyperZ.<br />Continue development and redesign by Captain P. Star alias NeoArmageddon.<br />Island ports and unit configs by Scruffy.<br />Additional coding and bugfixing by abelian, FrozenLiquidity, Dystopian, Phantom, DPM, Cyprus, aussie-battler, Kuroneko, Belkon, jaj22 and invrecon.<br />Mag repack script by outlawed.<br /><br />The official co10 Escape mission for Arma3 is developed and maintained by NeoArmageddon and Scruffy."]]; 
 player createDiaryRecord ["Diary", ["Hints (with spoilers)", "A local resistance member has hidden a bag of pistols in the temporary prison just before your arrival.<br /><br />
 The guards will be alarmed, if you gear up or escape. Prepare for a fight!<br /><br />
 The start is difficult! Even experienced squads often fail the initial escape. Just restart and try again. I believe in you!<br /><br />

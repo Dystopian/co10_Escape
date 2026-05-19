@@ -15,8 +15,8 @@
 					"PLAYERUNIT_4" : "OPTRE_Ins_URF_Engineer",
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
-					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_7" : "OPTRE_Ins_URF_AT_Specialist",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -29,16 +29,16 @@
 				{
 					"MOD" : "OPTRE INNIE vs UNSC Desert",
 					"PLAYERSIDE" : "EAST",
-					"PLAYERUNIT_1" : "OPTRE_Ins_URF_TeamLead",
-					"PLAYERUNIT_2" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_3" : "OPTRE_Ins_URF_AA_Specialist",
-					"PLAYERUNIT_4" : "OPTRE_Ins_URF_Engineer",
-					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
-					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
-					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
-					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
-					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
+					"PLAYERUNIT_1" : "OPTRE_Ins_URF_D_TeamLead",
+					"PLAYERUNIT_2" : "OPTRE_Ins_URF_D_Rifleman_AT",
+					"PLAYERUNIT_3" : "OPTRE_Ins_URF_D_AA_Specialist",
+					"PLAYERUNIT_4" : "OPTRE_Ins_URF_D_Engineer",
+					"PLAYERUNIT_5" : "OPTRE_Ins_URF_D_Grenadier",
+					"PLAYERUNIT_6" : "OPTRE_Ins_URF_D_Autorifleman",
+					"PLAYERUNIT_7" : "OPTRE_Ins_URF_D_Rifleman_AT",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_D_Rifleman_AR",
+					"PLAYERUNIT_9" : "OPTRE_Ins_URF_D_Sniper",
+					"PLAYERUNIT_10" : "OPTRE_Ins_URF_D_Medic"
 				}
 		},
 		{
@@ -56,7 +56,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -69,16 +69,16 @@
 				{
 					"MOD" : "OPTRE INNIE vs UNSC Winter",
 					"PLAYERSIDE" : "EAST",
-					"PLAYERUNIT_1" : "OPTRE_Ins_URF_TeamLead",
-					"PLAYERUNIT_2" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_3" : "OPTRE_Ins_URF_AA_Specialist",
-					"PLAYERUNIT_4" : "OPTRE_Ins_URF_Engineer",
-					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
-					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
-					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
-					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
-					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
+					"PLAYERUNIT_1" : "OPTRE_Ins_URF_S_TeamLead",
+					"PLAYERUNIT_2" : "OPTRE_Ins_URF_S_Rifleman_AT",
+					"PLAYERUNIT_3" : "OPTRE_Ins_URF_S_AA_Specialist",
+					"PLAYERUNIT_4" : "OPTRE_Ins_URF_S_Engineer",
+					"PLAYERUNIT_5" : "OPTRE_Ins_URF_S_Grenadier",
+					"PLAYERUNIT_6" : "OPTRE_Ins_URF_S_Autorifleman",
+					"PLAYERUNIT_7" : "OPTRE_Ins_URF_S_Rifleman_AT",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_S_Rifleman_AR",
+					"PLAYERUNIT_9" : "OPTRE_Ins_URF_S_Sniper",
+					"PLAYERUNIT_10" : "OPTRE_Ins_URF_S_Medic"
 				}
 		},
 		{
@@ -96,7 +96,7 @@
 					"PLAYERUNIT_5" : "OPTRE_Ins_URF_Grenadier",
 					"PLAYERUNIT_6" : "OPTRE_Ins_URF_Autorifleman",
 					"PLAYERUNIT_7" : "OPTRE_Ins_URF_Rifleman_AT",
-					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman",
+					"PLAYERUNIT_8" : "OPTRE_Ins_URF_Rifleman_AR",
 					"PLAYERUNIT_9" : "OPTRE_Ins_URF_Sniper",
 					"PLAYERUNIT_10" : "OPTRE_Ins_URF_Medic"
 				}
@@ -166,6 +166,20 @@
 			"mod" : "OPTRE",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC"
+		},
+        {
+			"island" : "Cham",
+			"sqm": "Cham",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "ChamW",
+			"sqm": "ChamW",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
 		},
 		{
 			"island" : "Chernarus",
@@ -258,6 +272,20 @@
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
 		},
+        {
+			"island" : "Gabreta",
+			"sqm": "Gabreta",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "Polanek",
+			"sqm": "Polanek",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
 		{
 			"island" : "Isla Duala",
 			"sqm": "IslaDuala3",
@@ -329,6 +357,13 @@
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
 		{
+			"island" : "Mutambara",
+			"sqm": "Mutambara",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
 			"island" : "Napf Island",
 			"sqm": "napf",
 			"mod" : "OPTRE Woodland",
@@ -341,6 +376,13 @@
 			"mod" :  "OPTRE Winter",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+        {
+			"island" : "Niakala",
+			"sqm": "Niakala",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
 			"island" : "Nogova",
@@ -371,8 +413,15 @@
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
 		},
 		{
-			"island" : "Prei Khmaoch Luong",
+			"island" : "Prei Khmaoch Luong Legacy",
 			"sqm": "prei_khmaoch_luong",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+        {
+			"island" : "Prei Khmaoch Luong RHS",
+			"sqm": "rhspkl",
 			"mod" : "OPTRE Tropical",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
@@ -413,6 +462,13 @@
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC"
 		},
 		{
+			"island" : "Sefrou-Ramal",
+			"sqm": "Sefrou-Ramal",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
 			"island" : "United Sahrani",
 			"sqm": "Sara_dbe1",
 			"mod" : "OPTRE",
@@ -440,6 +496,48 @@
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC"
 		},
+        {
+			"island" : "Summa",
+			"sqm": "Summa",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "SummaW",
+			"sqm": "SummaW",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Ihantala",
+			"sqm": "Ihantala",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "IhantalaW",
+			"sqm": "IhantalaW",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Hellanmaa",
+			"sqm": "Hellanmaa",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "HellanmaaW",
+			"sqm": "HellanmaaW",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
 		{
 			"island" : "Takistan",
 			"sqm": "Takistan",
@@ -455,8 +553,36 @@
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
 		},
 		{
+			"island" : "Colombia",
+			"sqm": "UMB_Colombia",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+		{
+			"island" : "Pulau",
+			"sqm": "Pulau",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+		{
 			"island" : "Anizay",
 			"sqm": "tem_anizay",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
+			"island" : "Al Salman",
+			"sqm": "Al Salman",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
+			"island" : "Sahatra",
+			"sqm": "Sahatra",
 			"mod" : "OPTRE Desert",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
@@ -488,10 +614,52 @@
 			"mod" : "OPTRE Woodland",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
-		},		
+		},
+        {
+			"island" : "Vinjesvingen",
+			"sqm": "vinjesvingen",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "Mull of Kintyre",
+			"sqm": "rof_mok",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "Scottish Highlands",
+			"sqm": "ScottishHighlands",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "County Fermanagh",
+			"sqm": "CountyFermanagh",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+        {
+			"island" : "Fapovo",
+			"sqm": "Fapovo",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
 		{
 			"island" : "Valtatie 5",
 			"sqm": "VT5",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Virolahti",
+			"sqm": "VT7",
 			"mod" : "OPTRE Woodland",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
@@ -502,6 +670,27 @@
 			"mod" : "OPTRE Winter",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Bystrica",
+			"sqm": "Woodland_ACR",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Sumava",
+			"sqm": "Sumava",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Maksniemi",
+			"sqm": "Maksniemi",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		},
 		{
 			"island" : "Yellowstone",
@@ -516,6 +705,90 @@
 			"mod" : "OPTRE Desert",
 			"replace" : {},
 			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
+			"island" : "Zargabad_2025",
+			"sqm": "Zargabad_2025",
+			"mod" : "OPTRE Desert",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Desert"
+		},
+		{
+			"island" : "Zagorsk Big Lakes",
+			"sqm": "zagor_zagorsk_biglakes",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Lybor",
+			"sqm": "Lybor",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Lybor Winter",
+			"sqm": "Lybor",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Archie",
+			"sqm": "archie",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Archie Winter",
+			"sqm": "archie_w",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Yulakia",
+			"sqm": "Yulakia",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Fjord",
+			"sqm": "Fjord",
+			"mod" : "OPTRE Winter",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Winter"
+		},
+		{
+			"island" : "Laghisola",
+			"sqm": "Laghisola",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+		{
+			"island" : "Mehland",
+			"sqm": "Mehland",
+			"mod" : "OPTRE Tropical",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Tropical"
+		},
+		{
+			"island" : "Stubbhult",
+			"sqm": "Stubbhult",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
+		},
+		{
+			"island" : "Namalsk",
+			"sqm": "NamalskR",
+			"mod" : "OPTRE Woodland",
+			"replace" : {},
+			"name" : "co10_Escape_OPTRE_INNIE_vs_UNSC Woodland"
 		}
 	],
 	"Addons" : [
